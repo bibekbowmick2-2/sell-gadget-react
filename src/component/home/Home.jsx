@@ -16,7 +16,7 @@ const Home = () => {
         <title>Home </title>
       </Helmet>
         <Banner></Banner>
-        <div className='flex justify-around bg-white text-black'>
+        <div className='flex flex-col  lg:flex-row lg:justify-around bg-white text-black'>
             <div className=""><Sidebar categories={categories} ></Sidebar></div>
             
             <Outlet ></Outlet>

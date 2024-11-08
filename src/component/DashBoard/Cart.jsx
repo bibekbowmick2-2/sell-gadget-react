@@ -35,7 +35,7 @@ export default function Cart() {
 
   return (
     <div>
-      <div className="flex justify-around space-x-8">
+      <div className="flex justify-around space-x-8 ">
         <div>
           <h3 className="font-bold">Cart</h3>
         </div>
@@ -75,7 +75,7 @@ export default function Cart() {
         <div
           key={a.id}
           role="alert"
-          className="mt-3 alert shadow-lg h-40 w-4/5 mx-auto bg-slate-200"
+          className="mt-3 alert shadow-lg h-60 lg:h-40 w-4/5 mx-auto bg-slate-200"
         >
           <div className="avatar">
             <div className="w-16 rounded">

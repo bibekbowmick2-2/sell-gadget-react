@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [additem, setAddItem] = useState([]);
   const [addwislist, setAddWishlist] = useState([]);
-  const [isDisabled, setIsDisabled] = useState(false);
+  const [disabledItems, setDisabledItems] = useState([]); 
 
   // Fetch data for categories and products
   useEffect(() => {
@@ -32,7 +32,7 @@ export const AppProvider = ({ children }) => {
   const handleWislist = (each_item) => {
     const new_item = [...addwislist, each_item];
     setAddWishlist(new_item);
-    setIsDisabled(true);
+    setDisabledItems(prevState => [...prevState, each_item.id]);
     toast.success("Item Added to Wishlist Successfully");
   };
 
@@ -56,7 +56,7 @@ export const AppProvider = ({ children }) => {
       handleDelete, 
       addwislist, 
       handleWislist,
-      isDisabled
+      disabledItems
     }}>
       {children}
     </AppContext.Provider>

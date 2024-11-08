@@ -8,28 +8,28 @@ const Navbar = () => {
     const { additem} = useContext(AppContext);
     const Link = <>
         <div className="lg:flex lg:gap-12">
-            <div className=""><NavLink to="/" 
+            <div className="text-lime-400"><NavLink to="/" 
              className={({ isActive}) =>
-     isActive ? "bg-slate-700 p-5 rounded-md" : ""
+     isActive ? "bg-slate-700 p-1 lg:p-5 rounded-md" : ""
   }>Home</NavLink></div>
 
   
-            <div className=""><NavLink to="/statistic"
+            <div className="text-lime-400"><NavLink to="/statistic"
             className={({ isActive}) =>
-     isActive ? "bg-slate-700 p-5 rounded-md" : ""
+     isActive ? "bg-slate-700 p-1 lg:p-5 rounded-md" : ""
   }>Statistic</NavLink></div>
 
 
 
-            <div className=""> <NavLink to="/dashBoard/cart"
+            <div className="text-lime-400"> <NavLink to="/dashBoard/cart"
             className={({ isActive}) =>
-     isActive ? "bg-slate-700 p-5 rounded-md" : ""
+     isActive ? "bg-slate-700 p-1 lg:p-5 rounded-md" : ""
   }>DashBoard</NavLink></div>
 
 
-<div className=""> <NavLink to="/calendar"
+<div className="text-lime-400"> <NavLink to="/calendar"
             className={({ isActive}) =>
-     isActive ? "bg-slate-700 p-5 rounded-md" : ""
+     isActive ? "bg-slate-700 p-1 lg:p-5 rounded-md" : ""
   }>Calendar</NavLink></div>
 
 

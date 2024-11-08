@@ -42,6 +42,7 @@ import {
             </div>
           </div>
           <p>Statistics</p>
+          <div className="w-[90%] lg:w-full">
           <ResponsiveContainer width="100%" height={500}>
             <ComposedChart
               data={data}
@@ -62,6 +63,8 @@ import {
               <Scatter dataKey="rating" fill="red" />
             </ComposedChart>
           </ResponsiveContainer>
+          </div>
+          
         </div>
       </div>
     );
