@@ -41,3 +41,11 @@
 
 - Comprehensive Services: In addition to selling gadgets, the website also provides branding, design, marketing, and advertisement services
 
+<img src="application-design/Screenshot_18.png"/>
+<img src="application-design/Screenshot_19.png"/>
+<img src="application-design/Screenshot_20.png"/>
+<img src="application-design/Screenshot_21.png"/>
+<img src="application-design/Screenshot_22.png"/>
+<img src="application-design/Screenshot_23.png"/>
+<img src="application-design/Screenshot_24.png"/>
+

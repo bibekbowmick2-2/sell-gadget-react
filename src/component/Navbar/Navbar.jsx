@@ -6,6 +6,7 @@ import { AppContext } from '../contextapi/AppProvider';
 
 const Navbar = () => {
     const { additem} = useContext(AppContext);
+    console.log(additem);
     const Link = <>
         <div className="lg:flex lg:gap-12">
             <div className="text-lime-400"><NavLink to="/" 

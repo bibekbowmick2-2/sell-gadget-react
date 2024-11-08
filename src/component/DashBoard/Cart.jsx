@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState,useEffect } from 'react';
 import { AppContext } from '../contextapi/AppProvider';
 import myImage4 from '../../../assets/delete.png';
 import myImage5 from '../../../assets/Group.png';
@@ -6,10 +6,15 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Cart() {
   const { additem, handleDelete } = useContext(AppContext);
-  const [sortedItems, setSortedItems] = useState(additem);
+  const [sortedItems, setSortedItems] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [cost, setcost] = useState(0); // State to manage modal visibility
   const navigate = useNavigate();
+
+
+  useEffect(() => {
+    setSortedItems(additem);
+  }, );
 
   // Calculate the total cost of added items
   const totalCost = sortedItems.reduce((acc, item) => acc + item.price, 0);
@@ -87,7 +92,7 @@ export default function Cart() {
             <div className="text-xs">{a.description}</div>
             <h4 className="font-bold">Price: ${a.price}</h4>
           </div>
-          <button onClick={() => handleDelete(a.id)} className="btn btn-sm">
+          <button onClick={() => handleDelete(a.id,"cart")} className="btn btn-sm">
             <img className="h-7 w-7" src={myImage4} alt="Delete Icon" />
           </button>
         </div>
