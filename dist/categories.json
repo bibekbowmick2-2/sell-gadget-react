@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "category": "all",
+      "slug": "brewed-coffee"
+    },
+    {
+      "id": 2,
+      "category": "Laptop",
+      "slug": "iced-coffee"
+    },
+    {
+      "id": 3,
+      "category": "Smartphone",
+      "slug": "dessert-coffee"
+    },
+
+
+    {
+        "id": 4,
+        "category": "Smartwatch",
+        "slug": "dessert-coffee"
+      }
+  ]
