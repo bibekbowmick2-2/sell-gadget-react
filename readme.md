@@ -2,7 +2,7 @@
 
 # figma link: https://www.figma.com/design/qr7hizhQyfmitEimBC6blK/Assignment-8?node-id=0-1&node-type=canvas&t=7Sr6v8i3wIN015u6-0
 # Project Name: Gadget Heaven
-# Live Site Link: https://adhesive-cannon.surge.sh/
+# Live Site Link: https://unaccountable-hands.surge.sh/
 
 # Project Setup:
 - **First clone or download repository**
